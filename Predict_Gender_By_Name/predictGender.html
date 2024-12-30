@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="gender-symbols.png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Guess Gender</title>
+</head>
+
+<body  class="font-[Poppins] bg-gray-50">
+
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+            <span class="text-xl lg:text-2xl font-[Poppins] cursor-pointer text-[#060840]">
+                <img class="h-8 lg:h-10 inline lg:mr-3 mr-2  lg:ml-3" src="../api.png" alt=""> 
+                 Mini Tools Factory 
+            </span>
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+        <ul class="md:flex md:items-center z-[1] md:z-auto md:static  absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 md:top-[-400px] transition-all easy-in duration-500 ">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="./BTC_Price/btcPrice.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">BTC Price</a>
+            </li>
+            <li  class="mx-4 my-6 md:my-0">
+                <a href="./Cat_Facts/catAPI.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Cat Facts</a>
+            </li>
+            <li  class="mx-4 my-6 md:my-0">
+                <a href="./Get_Jokes/getJokes.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Jokes</a>
+            </li>
+            <li  class="mx-4 my-6 md:my-0">
+                <a href="./My_IP/fetchMyIp.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">IP Checker</a>
+            </li>
+            <li  class="mx-4 my-6 md:my-0">
+                <a href="./Predict_Gender_By_Name/predictGender.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Gender Predictor</a>
+            </li>
+            <a href="mailto:yousuf.work09@gmail.com?subject=Website Order&body=Message" target="_blank">
+            <button class="bg-[#060840] text-white font-[Poppins] duration-500 px-6 py-3 mx-4 hover:bg-cyan-500 rounded">
+              Want a website ?
+            </button>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="w-[98vw] h[98vh] lg:h-[100vh] flex flex-row justify-around">
+
+        <div class="w-[80%] lg:w-[50%]">
+            <div class="no-wrap">
+                <h1 class="mt-12 md:mt-20 text-4xl  lg:text-6xl font-bold  text-[#060840]">Guess the Gender by Name</h1>
+                <div class="mt-5">
+                    <label for="username" class="text-xl lg:text-2xl font-bold  text-[#060840] block">Enter your Name </label>
+                    <input type="text" name="name" id="username" class="h-9 w-48 lg:h-12 lg:w-96 rounded-md bg-white focus:ring-[#060840] mt-3">
+                    <button id="button" class="border lg:py-3 py-1.5 px-2 lg:px-8 rounded-md shadow-sm mt-2 lg:mx-3 bg-[#060840] hover:bg-blue-500 text-white text-nowrap">Guess gender</button>
+                </div>
+            </div>
+
+
+            <div class="relative w-[100%] lg:w-[87%] overflow-x-auto shadow-lg sm:rounded-lg mt-10 bg-white block">
+                <table class="w-[100%] text-sm text-left rtl:text-right text-gray-500 ">
+                    <tbody class="">
+                        <tr class="border-b border-gray-200 ">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-white">
+                                Name
+                            </th>
+                            <td class="px-6 py-4" id="name">
+                            </td>
+
+                        </tr>
+                        <tr class="border-b border-gray-200 ">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-white ">
+                                Gender
+                            </th>
+                            <td class="px-6 py-4" id="gender">
+                            </td>
+
+                        </tr>
+                        <tr class="border-b border-gray-200 ">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-white ">
+                                Pobability
+                            </th>
+                            <td class="px-6 py-4" id="probability">
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="lg:w-[35%] hidden lg:block  mt-20">
+            <img src="equality.png" alt="" class="w-32 h-32 m-auto  lg:w-72 lg:h-72">
+        </div>
+
+    </div>
+
+    <footer class="bg-[#060840]">
+        <div class="flex justify-center lg:justify-around flex-col lg:flex-row mx-auto w-[98vw] max-w-screen-xl text-white">
+           <div class="lg:w-[40%] w-[100%]  my-4">
+                <h1 class="lg:mt-3 text-sm  md:text-2xl font-bold mx-6 lg:mx-0">
+                  Muhammad Yousuf 
+                  <span class="lg:mt-2 text-xs font-light block">
+                    I’m not a great programmer; I’m just a good programmer with great dreams :)
+                </span>
+                <span class="lg:mt-2 text-xs font-light">Let's Connect</span> 
+                </h1>
+                <div class="flex my-4 gap-4 mx-6 lg:mx-0">
+                  <a href="https://github.com/yousuf-git" class="cursor-pointer" target="_blank">
+                      <img src="../2993771_github_social media_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+                  </a>
+                  <a href="https://linkedin.com/in/muhammad-yousuf952" class="cursor-pointer" target="_blank">
+                      <img src="../216394_linkedin_social_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+                  </a>
+                  <a href="https://www.upwork.com/freelancers/~0117518e5f6a967242?mp_source=share" class="cursor-pointer" target="_blank">
+                    <img src="../1929180_upwork_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+                  </a>
+              </div>
+            </div>
+            <span class="m-auto">X</span>
+           <div class="lg:w-[40%] w-[100%] my-4">
+                <h1 class="lg:mt-3 text-sm  md:text-2xl font-bold mx-6 lg:mx-0">
+                  M Ubaid Javaid 
+                  <span class="lg:mt-2 text-xs font-light block">
+                    Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+                </span>
+                </h1>
+                <div class="flex my-4 gap-4 mx-6 lg:mx-0">
+                    <a href="https://github.com/MUbaidJavaid" class="cursor-pointer" target="_blank">
+                        <img src="../2993771_github_social media_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+                    </a>
+                    <a href="https://www.linkedin.com/in/m-ubaid-javaid-31b8132ab/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="cursor-pointer" target="_blank">
+                        <img src="../216394_linkedin_social_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+                    </a>
+                </div>
+           </div>
+        </div>
+      </footer>
+
+    <script>
+        const button = document.getElementById("button");
+
+        // Add event listener to the button
+        button.addEventListener("click", predict);
+
+        // Function to predict gender
+        async function predict() {
+            const username = document.getElementById("username").value;
+            // const count = document.getElementById("count");
+            const name = document.getElementById("name");
+            const gender = document.getElementById("gender");
+            const probability = document.getElementById("probability");
+
+            if (!name || !gender || !probability) {
+                console.log("One or more elements could not be found in the DOM.");
+                return;
+            }
+
+            try {
+                // Fetch the data from the API
+                const response = await fetch(`https://api.genderize.io?name=${username}`);
+                const data = await response.json();
+                console.log(data);
+
+                // Update the table with the data
+                name.innerText = data.name || "N/A";
+                gender.innerText = data.gender.toUpperCase() || "N/A";
+                probability.innerText = data.probability
+                    ? (data.probability * 100).toFixed(2) + "%"
+                    : "N/A";
+            } catch (error) {
+                // Handle errors
+                alert("Failed to fetch data. Please try again later.");
+                console.error("Error fetching data:", error);
+            }
+        }
+
+        function Menu(e){
+                     let list =document.querySelector('ul');
+                     e.name === 'menu' ? (e.name = "close" ,list.classList.add('top-80px'),list.classList.add('opacity-100')) :( e.name = "menu",list.classList.remove('top-80px'),list.classList.remove('opacity-100')) 
+             }
+
+    </script>
+
+</body>
+
+</html>
