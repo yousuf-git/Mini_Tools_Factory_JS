@@ -1,245 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
-      <style type="text/tailwindcss">
-        @layer utilities {
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
           .content-auto {
             content-visibility: auto;
           }
         }
       </style>
-      <link rel="icon" href="api.png">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link href="./output.css" rel="stylesheet">
-    <title>Mini Tools Factory</title>
+  <link rel="icon" href="api.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link href="./output.css" rel="stylesheet">
+  <title>Mini Tools Factory</title>
 </head>
+
 <body class=" font-[Poppins]  bg-gray-100 m-0 p-0">
 
-        <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
-            <div class="flex justify-between items-center">
-                <span class="text-xl lg:text-2xl font-[Poppins] cursor-pointer text-[#060840]">
-                    <img class="h-8 lg:h-10 inline lg:mr-3 mr-2  lg:ml-3" src="api.png" alt=""> 
-                     Mini Tools Factory 
-                </span>
-                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-                </span>
-            </div>
-            <ul class="md:flex md:items-center z-[1] md:z-auto md:static  absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 md:top-[-400px] transition-all easy-in duration-500 ">
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="./BTC_Price/btcPrice.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">BTC Price</a>
-                </li>
-                <li  class="mx-4 my-6 md:my-0">
-                    <a href="./Cat_Facts/catAPI.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Cat Facts</a>
-                </li>
-                <li  class="mx-4 my-6 md:my-0">
-                    <a href="./Get_Jokes/getJokes.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Jokes</a>
-                </li>
-                <li  class="mx-4 my-6 md:my-0">
-                    <a href="./My_IP/fetchMyIp.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">IP Checker</a>
-                </li>
-                <li  class="mx-4 my-6 md:my-0">
-                    <a href="./Predict_Gender_By_Name/predictGender.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Gender Predictor</a>
-                </li>
-                <a href="mailto:yousuf.work09@gmail.com?subject=Website Order&body=Message" target="_blank">
-                <button class="bg-[#060840] text-white font-[Poppins] duration-500 px-6 py-3 mx-4 hover:bg-cyan-500 rounded">
-                  Want a website ?
-                </button>
-                </a>
-            </ul>
-        </nav>
+  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <span class="text-xl lg:text-2xl font-[Poppins] cursor-pointer text-[#060840]">
+        <img class="h-8 lg:h-10 inline lg:mr-3 mr-2  lg:ml-3" src="api.png" alt="">
+        Mini Tools Factory
+      </span>
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+    <ul
+      class="md:flex md:items-center z-[-1] md:z-auto md:static  absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 md:top-[-400px] transition-all easy-in duration-500 ">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="./BTC_Price/btcPrice.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">BTC
+          Price</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="./Cat_Facts/catAPI.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Cat Facts</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="./Get_Jokes/getJokes.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Jokes</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="./My_IP/fetchMyIp.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">IP Checker</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="./Predict_Gender_By_Name/predictGender.html" target="_blank"
+          class="text-sm hover:text-cyan-500 duration-500">Gender Predictor</a>
+      </li>
+      <a href="mailto:yousuf.work09@gmail.com?subject=Website Order&body=Message" target="_blank">
+        <button class="bg-[#060840] text-white font-[Poppins] duration-500 px-6 py-3 mx-4 hover:bg-cyan-500 rounded">
+          Want a website ?
+        </button>
+      </a>
+    </ul>
+  </nav>
 
-        <div class="w-[98vw] h[50vh] md:h-[60vh] flex flex-row justify-around">
-            <div class="w-[50%] ">
-                <h1 class="mt-12 lg:mt-20 text-4xl lg:text-6xl font-bold  text-[#060840]">
-                    Mini tools freely available for you
-                </h1>
-                <h1 class="hidden lg:block lg:mt-2 text-xs lg:text-2xl lg:text-nowrap font-light text-[#060840]">
-                    These tools are based on free available APIS from the internet
-                </h1>
-                <h1 class=" hidden lg:block lg:mt-3 text-sm  lg:text-2xl font-bold text-[#060840]">
-                    Disclaimer : 
-                    <span class="hidden lg:block lg:mt-2 text-xs lg:text-2xl font-light text-[#060840]">
-                        Some of them may not be working because of API issue
-                    </span>
-                </h1>
-            </div>
-            <div class="lg:w-[35%] w-[25%]  mt-9 lg:mt-0">
-                <img src="api_thumbnail.png" alt="" class="w-32 h-32  lg:w-96 lg:h-96">
-            </div>
+  <div class="w-[98vw] h[50vh] md:h-[60vh] flex flex-row justify-around">
+    <div class="w-[50%] ">
+      <h1 class="mt-12 lg:mt-20 text-4xl lg:text-6xl font-bold  text-[#060840]">
+        Mini tools freely available for you
+      </h1>
+      <h1 class="hidden lg:block lg:mt-2 text-xs lg:text-2xl lg:text-nowrap font-light text-[#060840]">
+        These tools are based on free available APIS from the internet
+      </h1>
+      <h1 class=" hidden lg:block lg:mt-3 text-sm  lg:text-2xl font-bold text-[#060840]">
+        Disclaimer :
+        <span class="hidden lg:block lg:mt-2 text-xs lg:text-2xl font-light text-[#060840]">
+          Some of them may not be working because of API issue
+        </span>
+      </h1>
+    </div>
+    <div class="lg:w-[35%] w-[25%]  mt-9 lg:mt-0">
+      <img src="api_thumbnail.png" alt="" class="w-32 h-32  lg:w-96 lg:h-96">
+    </div>
+  </div>
+
+  <div class="flex flex-col justify-around  gap-y-4  lg:flex-row lg:gap-7 items-center lg:mx-12 mt-10">
+    <div class="lg:w-[22vw] w-[80vw] p-4 bg-white border border-gray-200 rounded-lg shadow">
+      <div class="flex justify-between">
+        <a href="./BTC_Price/btcPrice.html" class="cursor-pointer" target="_blank">
+          <img src="./BTC_Price/bitcoin.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-sky-100 rounded-2xl">
+        </a>
+        <div>
+          <a href="./BTC_Price/btcPrice.html" class="cursor-pointer" target="_blank">
+            <h1 class="text-[#060840] font-bold text-sm md:text-xl  grid place-content-end mr-1 mt-1  ">BTC Price</h1>
+          </a>
         </div>
+      </div>
+      <hr class="mt-2">
+      <p class=" font-norml text-gray-500 text-xs md:text-sm mt-2">
+        <a href="./BTC_Price/btcPrice.html" class="cursor-pointer" target="_blank">
+          <span class="text-[#060840]  font-bold">Try it out</span>
+        </a>
+      </p>
+    </div>
 
-        <div class="flex flex-col justify-around  gap-y-4  lg:flex-row lg:gap-7 items-center lg:mx-12 mt-10">
-            <div class="lg:w-[22vw] w-[80vw] p-4 bg-white border border-gray-200 rounded-lg shadow">   
-               <div class="flex justify-between">
-                    <a href="./BTC_Price/btcPrice.html" class="cursor-pointer" target="_blank">
-                         <img src="./BTC_Price/bitcoin.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-sky-100 rounded-2xl">
-                    </a>
-                    <div>
-                    <a href="./BTC_Price/btcPrice.html" class="cursor-pointer" target="_blank">
-                         <h1 class="text-[#060840] font-bold text-sm md:text-xl  grid place-content-end mr-1 mt-1  ">BTC Price</h1>
-                    </a>
-                    </div> 
-               </div>
-               <hr class="mt-2"> 
-                <p class=" font-norml text-gray-500 text-xs md:text-sm mt-2">
-                  <a href="./BTC_Price/btcPrice.html" class="cursor-pointer" target="_blank">
-                     <span class="text-[#060840]  font-bold">Try it out</span>
-                  </a>
-                </p>
-            </div>
+    <div class="lg:w-[22vw] w-[80vw] p-4 bg-white border border-gray-200 rounded-lg shadow">
+      <div class="flex justify-between">
+        <a href="./Cat_Facts/catAPI.html" class="cursor-pointer" target="_blank">
+          <img src="./Cat_Facts/kitty.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-sky-100 rounded-2xl">
+        </a>
+        <div>
+          <a href="./Cat_Facts/catAPI.html" class="cursor-pointer" target="_blank">
+            <h1 class="text-[#060840] font-bold text-sm md:text-xl  grid place-content-end mr-1 mt-1  ">Cat Facts</h1>
+          </a>
+        </div>
+      </div>
+      <hr class="mt-2">
+      <p class=" font-norml text-gray-500 text-sm mt-2">
+        <a href="./Cat_Facts/catAPI.html" class="cursor-pointer" target="_blank">
+          <span class="text-[#060840] font-bold">Try it out</span>
+        </a>
+      </p>
+    </div>
 
-            <div class="lg:w-[22vw] w-[80vw] p-4 bg-white border border-gray-200 rounded-lg shadow">   
-                <div class="flex justify-between">
-                     <a href="./Cat_Facts/catAPI.html" class="cursor-pointer" target="_blank">
-                          <img src="./Cat_Facts/kitty.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-sky-100 rounded-2xl">
-                     </a>
-                     <div>
-                     <a href="./Cat_Facts/catAPI.html" class="cursor-pointer" target="_blank">
-                          <h1 class="text-[#060840] font-bold text-sm md:text-xl  grid place-content-end mr-1 mt-1  ">Cat Facts</h1>
-                     </a>
-                     </div> 
-                </div>
-                <hr class="mt-2"> 
-                 <p class=" font-norml text-gray-500 text-sm mt-2">
-                   <a href="./Cat_Facts/catAPI.html" class="cursor-pointer" target="_blank">
-                      <span class="text-[#060840] font-bold">Try it out</span>
-                   </a>
-                 </p>
-             </div>
+    <div class="lg:w-[22vw] w-[80vw] p-4 bg-white border border-gray-200 rounded-lg shadow">
+      <div class="flex justify-between ">
+        <a href="./Get_Jokes/getJokes.html" class="cursor-pointer" target="_blank">
+          <img src="./Get_Jokes/kidding.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-sky-100 rounded-2xl">
+        </a>
+        <div>
+          <a href="./Get_Jokes/getJokes.html" class="cursor-pointer" target="_blank">
+            <h1 class="text-[#060840] font-bold text-sm md:text-xl  grid place-content-end mr-1 mt-1  ">Jokes For You
+            </h1>
+          </a>
+        </div>
+      </div>
+      <hr class="mt-2">
+      <p class=" font-norml text-gray-500 text-sm mt-2">
+        <a href="./Get_Jokes/getJokes.html" class="cursor-pointer" target="_blank">
+          <span class="text-[#060840] font-bold">Try it out</span>
+        </a>
+      </p>
+    </div>
 
-             <div class="lg:w-[22vw] w-[80vw] p-4 bg-white border border-gray-200 rounded-lg shadow">   
-                <div class="flex justify-between ">
-                     <a href="./Get_Jokes/getJokes.html" class="cursor-pointer" target="_blank">
-                          <img src="./Get_Jokes/kidding.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-sky-100 rounded-2xl">
-                     </a>
-                     <div>
-                     <a href="./Get_Jokes/getJokes.html" class="cursor-pointer" target="_blank">
-                          <h1 class="text-[#060840] font-bold text-sm md:text-xl  grid place-content-end mr-1 mt-1  ">Jokes For You</h1>
-                     </a>
-                     </div> 
-                </div>
-                <hr class="mt-2"> 
-                 <p class=" font-norml text-gray-500 text-sm mt-2">
-                   <a href="./Get_Jokes/getJokes.html" class="cursor-pointer" target="_blank">
-                      <span class="text-[#060840] font-bold">Try it out</span>
-                   </a>
-                 </p>
-             </div>
+    <div class="lg:w-[22vw] w-[80vw] p-4 bg-white border border-gray-200 rounded-lg shadow">
+      <div class="flex justify-between">
+        <a href="./My_IP/fetchMyIp.html" class="cursor-pointer" target="_blank">
+          <img src="./My_IP/maps-and-flags.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-sky-100 rounded-2xl">
+        </a>
+        <div>
+          <a href="./My_IP/fetchMyIp.html" class="cursor-pointer" target="_blank">
+            <h1 class="text-[#060840] font-bold text-sm md:text-xl  grid place-content-end mr-1 mt-1  ">IP Checker</h1>
+          </a>
+        </div>
+      </div>
+      <hr class="mt-2">
+      <p class=" font-norml text-gray-500 text-sm mt-2">
+        <a href="./My_IP/fetchMyIp.html" class="cursor-pointer" target="_blank">
+          <span class="text-[#060840] font-bold">Try it out</span>
+        </a>
+      </p>
+    </div>
+     
+  </div>
 
-             <div class="lg:w-[22vw] w-[80vw] p-4 bg-white border border-gray-200 rounded-lg shadow">   
-                <div class="flex justify-between">
-                     <a href="./My_IP/fetchMyIp.html" class="cursor-pointer" target="_blank">
-                          <img src="./My_IP/maps-and-flags.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-sky-100 rounded-2xl">
-                     </a>
-                     <div>
-                     <a href="./My_IP/fetchMyIp.html" class="cursor-pointer" target="_blank">
-                          <h1 class="text-[#060840] font-bold text-sm md:text-xl  grid place-content-end mr-1 mt-1  ">IP Checker</h1>
-                     </a>
-                     </div> 
-                </div>
-                <hr class="mt-2"> 
-                 <p class=" font-norml text-gray-500 text-sm mt-2">
-                   <a href="./My_IP/fetchMyIp.html" class="cursor-pointer" target="_blank">
-                      <span class="text-[#060840] font-bold">Try it out</span>
-                   </a>
-                 </p>
-             </div>     
-          </div>
-
-         <div class="flex  justify-center  items-center -mt-4 lg:mt-6 mb-6">
-            <div class="lg:w-[23vw] w-[80vw] p-4 bg-white border border-gray-200 rounded-lg shadow">   
-                <div class="flex justify-between">
-                     <a href="./Predict_Gender_By_Name/predictGender.html" class="cursor-pointer" target="_blank">
-                          <img src="./Predict_Gender_By_Name/gender-symbols.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-sky-100 rounded-2xl">
-                     </a>
-                     <div>
-                     <a href="./Predict_Gender_By_Name/predictGender.html" class="cursor-pointer" target="_blank">
-                          <h1 class="text-[#060840] font-bold text-sm md:text-xl grid place-content-end mr-1 mt-1  ">Gender Predictor</h1>
-                     </a>
-                     </div> 
-                </div>
-                <hr class="mt-2"> 
-                 <p class=" font-norml text-gray-500 text-xs md:text-sm mt-2">
-                   <a href="./Predict_Gender_By_Name/predictGender.html" class="cursor-pointer" target="_blank">
-                      <span class="text-[#060840]  font-bold">Try it out</span>
-                   </a>
-                 </p>
-             </div>
-         </div>
+  <div class="flex  justify-center  items-center -mt-4 lg:mt-6 mb-6">
+    <div class="lg:w-[23vw] w-[80vw] p-4 bg-white border border-gray-200 rounded-lg shadow">
+      <div class="flex justify-between">
+        <a href="./Predict_Gender_By_Name/predictGender.html" class="cursor-pointer" target="_blank">
+          <img src="./Predict_Gender_By_Name/gender-symbols.png" alt=""
+            class="stroke-blue-400 w-10 h-10 p-2 bg-sky-100 rounded-2xl">
+        </a>
+        <div>
+          <a href="./Predict_Gender_By_Name/predictGender.html" class="cursor-pointer" target="_blank">
+            <h1 class="text-[#060840] font-bold text-sm md:text-xl grid place-content-end mr-1 mt-1  ">Gender Predictor
+            </h1>
+          </a>
+        </div>
+      </div>
+      <hr class="mt-2">
+      <p class=" font-norml text-gray-500 text-xs md:text-sm mt-2">
+        <a href="./Predict_Gender_By_Name/predictGender.html" class="cursor-pointer" target="_blank">
+          <span class="text-[#060840]  font-bold">Try it out</span>
+        </a>
+      </p>
+    </div>
+  </div>
 
 
-         
-
-        <footer class="bg-[#060840]">
-          <div class="flex justify-center lg:justify-around flex-col lg:flex-row mx-auto w-[98vw] max-w-screen-xl text-white">
-             <div class="lg:w-[40%] w-[100%]  my-4">
-                  <h1 class="lg:mt-3 text-sm  md:text-2xl font-bold mx-6 lg:mx-0">
-                    Muhammad Yousuf 
-                    <span class="lg:mt-2 text-xs font-light block">
-                      I’m not a great programmer; I’m just a good programmer with great dreams :)
-                  </span>
-                  <span class="lg:mt-2 text-xs font-light">Let's Connect</span> 
-                  </h1>
-                  <div class="flex my-4 gap-4 mx-6 lg:mx-0">
-                    <a href="https://github.com/yousuf-git" class="cursor-pointer" target="_blank">
-                        <img src="2993771_github_social media_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
-                    </a>
-                    <a href="https://linkedin.com/in/muhammad-yousuf952" class="cursor-pointer" target="_blank">
-                        <img src="216394_linkedin_social_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
-                    </a>
-                    <a href="https://www.upwork.com/freelancers/~0117518e5f6a967242?mp_source=share" class="cursor-pointer" target="_blank">
-                      <img src="1929180_upwork_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
-                    </a>
-                </div>
-              </div>
-              <span class="m-auto">X</span>
-             <div class="lg:w-[40%] w-[100%] my-4">
-                  <h1 class="lg:mt-3 text-sm  md:text-2xl font-bold mx-6 lg:mx-0">
-                    M Ubaid Javaid 
-                    <span class="lg:mt-2 text-xs font-light block">
-                      Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
-                  </span>
-                  </h1>
-                  <div class="flex my-4 gap-4 mx-6 lg:mx-0">
-                      <a href="https://github.com/MUbaidJavaid" class="cursor-pointer" target="_blank">
-                          <img src="2993771_github_social media_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
-                      </a>
-                      <a href="https://www.linkedin.com/in/m-ubaid-javaid-31b8132ab/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="cursor-pointer" target="_blank">
-                          <img src="216394_linkedin_social_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
-                      </a>
-                  </div>
-             </div>
-          </div>
-        </footer>
 
 
-        <script>
-             function Menu(e){
-                     let list =document.querySelector('ul');
-                     e.name === 'menu' ? (e.name = "close" ,list.classList.add('top-80px'),list.classList.add('opacity-100')) :( e.name = "menu",list.classList.remove('top-80px'),list.classList.remove('opacity-100')) 
-             }
+  <footer class="bg-[#060840]">
+    <div class="flex justify-center lg:justify-around flex-col lg:flex-row mx-auto w-[98vw] max-w-screen-xl text-white">
+      <div class="lg:w-[40%] w-[100%]  my-4">
+        <h1 class="lg:mt-3 text-sm  md:text-2xl font-bold mx-6 lg:mx-0">
+          Muhammad Yousuf
+          <span class="lg:mt-2 text-xs font-light block">
+            I’m not a great programmer; I’m just a good programmer with great dreams :)
+          </span>
+          <span class="lg:mt-2 text-xs font-light">Let's Connect</span>
+        </h1>
+        <div class="flex my-4 gap-4 mx-6 lg:mx-0">
+          <a href="https://github.com/yousuf-git" class="cursor-pointer" target="_blank">
+            <img src="2993771_github_social media_icon.png" alt=""
+              class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+          </a>
+          <a href="https://linkedin.com/in/muhammad-yousuf952" class="cursor-pointer" target="_blank">
+            <img src="216394_linkedin_social_icon.png" alt=""
+              class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+          </a>
+          <a href="https://www.upwork.com/freelancers/~0117518e5f6a967242?mp_source=share" class="cursor-pointer"
+            target="_blank">
+            <img src="1929180_upwork_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+          </a>
+        </div>
+      </div>
+      <span class="m-auto">X</span>
+      <div class="lg:w-[40%] w-[100%] my-4">
+        <h1 class="lg:mt-3 text-sm  md:text-2xl font-bold mx-6 lg:mx-0">
+          M Ubaid Javaid
+          <span class="lg:mt-2 text-xs font-light block">
+            Any fool can write code that a computer can understand. Good programmers write code that humans can
+            understand.
+          </span>
+        </h1>
+        <div class="flex my-4 gap-4 mx-6 lg:mx-0">
+          <a href="https://github.com/MUbaidJavaid" class="cursor-pointer" target="_blank">
+            <img src="2993771_github_social media_icon.png" alt=""
+              class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+          </a>
+          <a href="https://www.linkedin.com/in/m-ubaid-javaid-31b8132ab/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            class="cursor-pointer" target="_blank">
+            <img src="216394_linkedin_social_icon.png" alt=""
+              class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        </script>
+
+  <script>
+    function Menu(e) {
+      let list = document.querySelector('ul');
+      if (e.name === 'menu') {
+        e.name = "close";
+        list.classList.add('top-80px');
+        list.classList.add('opacity-100');
+        // list.style.background = "black"; // Enable pointer events
+        list.style.zIndex = "1";
+      } else {
+        e.name = "menu";
+        list.classList.remove('top-80px');
+        list.classList.remove('opacity-100');
+        // list.style.pointerEvents = "none"; // Disable pointer events
+        list.style.zIndex = "-1";
+      }
+    }
+
+  </script>
 </body>
+
 </html>

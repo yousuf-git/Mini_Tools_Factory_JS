@@ -7,156 +7,187 @@
     <title>Get Jokes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="kidding.png">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-[Poppins] bg-gray-100" >
+<body class="font-[Poppins] bg-gray-100">
 
     <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
         <div class="flex justify-between items-center">
             <a href="../index.html">
-            <span class="text-xl lg:text-2xl font-[Poppins] cursor-pointer text-[#060840]">
-                <img class="h-8 lg:h-10 inline lg:mr-3 mr-2  lg:ml-3" src="../api.png" alt=""> 
-                 Mini Tools Factory 
-            </span>
+                <span class="text-xl lg:text-2xl font-[Poppins] cursor-pointer text-[#060840]">
+                    <img class="h-8 lg:h-10 inline lg:mr-3 mr-2  lg:ml-3" src="../api.png" alt="">
+                    Mini Tools Factory
+                </span>
             </a>
             <span class="text-3xl cursor-pointer mx-2 md:hidden block">
                 <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
             </span>
         </div>
-        <ul class="md:flex md:items-center z-[1] md:z-auto md:static  absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 md:top-[-400px] transition-all easy-in duration-500 ">
+        <ul
+            class="md:flex md:items-center z-[-1] md:z-auto md:static  absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 md:top-[-400px] transition-all easy-in duration-500 ">
             <li class="mx-4 my-6 md:my-0">
-                <a href="../BTC_Price/btcPrice.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">BTC Price</a>
+                <a href="../BTC_Price/btcPrice.html" target="_blank"
+                    class="text-sm hover:text-cyan-500 duration-500">BTC Price</a>
             </li>
-            <li  class="mx-4 my-6 md:my-0">
-                <a href="../Cat_Facts/catAPI.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Cat Facts</a>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="../Cat_Facts/catAPI.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Cat
+                    Facts</a>
             </li>
-            <li  class="mx-4 my-6 md:my-0">
-                <a href="./Get_Jokes/getJokes.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Jokes</a>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="./Get_Jokes/getJokes.html" target="_blank"
+                    class="text-sm hover:text-cyan-500 duration-500">Jokes</a>
             </li>
-            <li  class="mx-4 my-6 md:my-0">
-                <a href="../My_IP/fetchMyIp.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">IP Checker</a>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="../My_IP/fetchMyIp.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">IP
+                    Checker</a>
             </li>
-            <li  class="mx-4 my-6 md:my-0">
-                <a href="../Predict_Gender_By_Name/predictGender.html" target="_blank" class="text-sm hover:text-cyan-500 duration-500">Gender Predictor</a>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="../Predict_Gender_By_Name/predictGender.html" target="_blank"
+                    class="text-sm hover:text-cyan-500 duration-500">Gender Predictor</a>
             </li>
             <a href="mailto:yousuf.work09@gmail.com?subject=Website Order&body=Message" target="_blank">
-            <button class="bg-[#060840] text-white font-[Poppins] duration-500 px-6 py-3 mx-4 hover:bg-cyan-500 rounded">
-              Want a website ?
-            </button>
+                <button
+                    class="bg-[#060840] text-white font-[Poppins] duration-500 px-6 py-3 mx-4 hover:bg-cyan-500 rounded">
+                    Want a website ?
+                </button>
             </a>
         </ul>
     </nav>
 
-        <div class="bg-gray-100 font-sans flex items-center justify-center mb-10">
-            <div class="bg-white rounded-lg mt-10 shadow-2xl w-full max-w-xl overflow-hidden px-3">
-                <!-- Header Section -->
-                <div class="bg-[#060840] text-white text-center py-3 w-[100%]">
-                    <h1 class="text-3xl font-bold">Joke For You</h1>
-                    <p class="text-sm mt-2">Get random jokes by type</p>
+    <div class="bg-gray-100 font-sans flex items-center justify-center mb-10">
+        <div class="bg-white rounded-lg mt-10 shadow-2xl w-full max-w-xl overflow-hidden px-3">
+            <!-- Header Section -->
+            <div class="bg-[#060840] text-white text-center py-3 w-[100%]">
+                <h1 class="text-3xl font-bold">Joke For You</h1>
+                <p class="text-sm mt-2">Get random jokes by type</p>
+            </div>
+
+            <!-- Content Section -->
+            <div class="p-6 space-y-6">
+                <!-- Joke Type Dropdown -->
+                <div>
+                    <label for="joke-type" class="block text-lg font-medium text-[#060840] mb-2">Select Joke
+                        Type</label>
+                    <select id="joke-type"
+                        class="block w-full p-3 border border-gray-300 rounded-md bg-gray-50 focus:ring-2 focus:ring-[#060840] focus:outline-none">
+                        <option value="">Loading types...</option>
+                    </select>
                 </div>
 
-                <!-- Content Section -->
-                <div class="p-6 space-y-6">
-                    <!-- Joke Type Dropdown -->
-                    <div>
-                        <label for="joke-type" class="block text-lg font-medium text-[#060840] mb-2">Select Joke Type</label>
-                        <select id="joke-type"
-                            class="block w-full p-3 border border-gray-300 rounded-md bg-gray-50 focus:ring-2 focus:ring-[#060840] focus:outline-none">
-                            <option value="">Loading types...</option>
-                        </select>
-                    </div>
-
-                    <!-- Buttons and Custom Input -->
-                    <div class="grid grid-cols-1 gap-4">
-                        <button id="one-joke-btn" onclick="fetchJokes('one')"
+                <!-- Buttons and Custom Input -->
+                <div class="grid grid-cols-1 gap-4">
+                    <button id="one-joke-btn" onclick="fetchJokes('one')"
+                        class="bg-[#060840] text-white px-6 py-3 rounded-md hover:bg-blue-600 transition ease-in-out duration-200">
+                        Get 1 Joke
+                    </button>
+                    <button id="ten-jokes-btn" onclick="fetchJokes('ten')"
+                        class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-500 transition ease-in-out duration-200">
+                        Get 10 Jokes
+                    </button>
+                    <div class="flex items-center space-x-2">
+                        <input type="number" id="custom-joke-count" placeholder="Enter number (1-30)"
+                            class="flex-1 p-3 border border-gray-300 rounded-md bg-gray-50 focus:ring-2 focus:ring-[#060840] focus:outline-none"
+                            min="1" max="10">
+                        <button id="custom-joke-btn" onclick="fetchJokes('custom')"
                             class="bg-[#060840] text-white px-6 py-3 rounded-md hover:bg-blue-600 transition ease-in-out duration-200">
-                            Get 1 Joke
+                            Get Jokes
                         </button>
-                        <button id="ten-jokes-btn" onclick="fetchJokes('ten')"
-                            class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-500 transition ease-in-out duration-200">
-                            Get 10 Jokes
-                        </button>
-                        <div class="flex items-center space-x-2">
-                            <input type="number" id="custom-joke-count" placeholder="Enter number (1-30)"
-                                class="flex-1 p-3 border border-gray-300 rounded-md bg-gray-50 focus:ring-2 focus:ring-[#060840] focus:outline-none"
-                                min="1" max="10">
-                            <button id="custom-joke-btn" onclick="fetchJokes('custom')"
-                                class="bg-[#060840] text-white px-6 py-3 rounded-md hover:bg-blue-600 transition ease-in-out duration-200">
-                                Get Jokes
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Divider -->
-                    <hr class="border-t border-gray-200">
-
-                    <!-- Jokes Display Container -->
-                    <div id="jokes-container" class="space-y-4 max-h-[400px] overflow-y-auto">
-                        <!-- Dynamic joke cards will appear here -->
                     </div>
                 </div>
 
-                <!-- Footer Section -->
-                <div class="bg-gray-100 text-center py-4">
-                    <h6 class="text-sm text-gray-500">A public service message by M Ubaid Javaid</h6>
-                    <p class="text-sm">Keep Smiling :)</p>
+                <!-- Divider -->
+                <hr class="border-t border-gray-200">
+
+                <!-- Jokes Display Container -->
+                <div id="jokes-container" class="space-y-4 max-h-[400px] overflow-y-auto">
+                    <!-- Dynamic joke cards will appear here -->
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <div class="bg-gray-100 text-center py-4">
+                <h6 class="text-sm text-gray-500">A public service message by M Ubaid Javaid</h6>
+                <p class="text-sm">Keep Smiling :)</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#060840]">
+        <div
+            class="flex justify-center lg:justify-around flex-col lg:flex-row mx-auto w-[98vw] max-w-screen-xl text-white">
+            <div class="lg:w-[40%] w-[100%]  my-4">
+                <h1 class="lg:mt-3 text-sm  md:text-2xl font-bold mx-6 lg:mx-0">
+                    Muhammad Yousuf
+                    <span class="lg:mt-2 text-xs font-light block">
+                        I’m not a great programmer; I’m just a good programmer with great dreams :)
+                    </span>
+                    <span class="lg:mt-2 text-xs font-light">Let's Connect</span>
+                </h1>
+                <div class="flex my-4 gap-4 mx-6 lg:mx-0">
+                    <a href="https://github.com/yousuf-git" class="cursor-pointer" target="_blank">
+                        <img src="../2993771_github_social media_icon.png" alt=""
+                            class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+                    </a>
+                    <a href="https://linkedin.com/in/muhammad-yousuf952" class="cursor-pointer" target="_blank">
+                        <img src="../216394_linkedin_social_icon.png" alt=""
+                            class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~0117518e5f6a967242?mp_source=share"
+                        class="cursor-pointer" target="_blank">
+                        <img src="../1929180_upwork_icon.png" alt=""
+                            class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+                    </a>
+                </div>
+            </div>
+            <span class="m-auto hidden lg:block">X</span>
+            <div class="lg:w-[40%] w-[100%] my-4">
+                <h1 class="lg:mt-3 text-sm  md:text-2xl font-bold mx-6 lg:mx-0">
+                    M Ubaid Javaid
+                    <span class="lg:mt-2 text-xs font-light block">
+                        Any fool can write code that a computer can understand. Good programmers write code that humans
+                        can understand.
+                    </span>
+                </h1>
+                <div class="flex my-4 gap-4 mx-6 lg:mx-0">
+                    <a href="https://github.com/MUbaidJavaid" class="cursor-pointer" target="_blank">
+                        <img src="../2993771_github_social media_icon.png" alt=""
+                            class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+                    </a>
+                    <a href="https://www.linkedin.com/in/m-ubaid-javaid-31b8132ab/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        class="cursor-pointer" target="_blank">
+                        <img src="../216394_linkedin_social_icon.png" alt=""
+                            class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
+                    </a>
                 </div>
             </div>
         </div>
-
-        <footer class="bg-[#060840]">
-            <div class="flex justify-center lg:justify-around flex-col lg:flex-row mx-auto w-[98vw] max-w-screen-xl text-white">
-               <div class="lg:w-[40%] w-[100%]  my-4">
-                    <h1 class="lg:mt-3 text-sm  md:text-2xl font-bold mx-6 lg:mx-0">
-                      Muhammad Yousuf 
-                      <span class="lg:mt-2 text-xs font-light block">
-                        I’m not a great programmer; I’m just a good programmer with great dreams :)
-                    </span>
-                    <span class="lg:mt-2 text-xs font-light">Let's Connect</span> 
-                    </h1>
-                    <div class="flex my-4 gap-4 mx-6 lg:mx-0">
-                      <a href="https://github.com/yousuf-git" class="cursor-pointer" target="_blank">
-                          <img src="../2993771_github_social media_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
-                      </a>
-                      <a href="https://linkedin.com/in/muhammad-yousuf952" class="cursor-pointer" target="_blank">
-                          <img src="../216394_linkedin_social_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
-                      </a>
-                      <a href="https://www.upwork.com/freelancers/~0117518e5f6a967242?mp_source=share" class="cursor-pointer" target="_blank">
-                        <img src="../1929180_upwork_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
-                      </a>
-                  </div>
-                </div>
-                <span class="m-auto hidden lg:block">X</span>
-               <div class="lg:w-[40%] w-[100%] my-4">
-                    <h1 class="lg:mt-3 text-sm  md:text-2xl font-bold mx-6 lg:mx-0">
-                      M Ubaid Javaid 
-                      <span class="lg:mt-2 text-xs font-light block">
-                        Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
-                    </span>
-                    </h1>
-                    <div class="flex my-4 gap-4 mx-6 lg:mx-0">
-                        <a href="https://github.com/MUbaidJavaid" class="cursor-pointer" target="_blank">
-                            <img src="../2993771_github_social media_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
-                        </a>
-                        <a href="https://www.linkedin.com/in/m-ubaid-javaid-31b8132ab/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="cursor-pointer" target="_blank">
-                            <img src="../216394_linkedin_social_icon.png" alt="" class="stroke-blue-400 w-10 h-10 p-2 bg-white rounded-2xl">
-                        </a>
-                    </div>
-               </div>
-            </div>
-          </footer>
+    </footer>
 
 
     <script>
 
-        function Menu(e){
-                     let list =document.querySelector('ul');
-                     e.name === 'menu' ? (e.name = "close" ,list.classList.add('top-80px'),list.classList.add('opacity-100')) :( e.name = "menu",list.classList.remove('top-80px'),list.classList.remove('opacity-100')) 
-             }
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            if (e.name === 'menu') {
+                e.name = "close";
+                list.classList.add('top-80px');
+                list.classList.add('opacity-100');
+                // list.style.background = "black"; // Enable pointer events
+                list.style.zIndex = "1";
+            } else {
+                e.name = "menu";
+                list.classList.remove('top-80px');
+                list.classList.remove('opacity-100');
+                // list.style.pointerEvents = "none"; // Disable pointer events
+                list.style.zIndex = "-1";
+            }
+        }
 
         async function fetchJokeTypes() {
             try {
